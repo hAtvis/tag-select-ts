@@ -1,0 +1,57 @@
+{
+  "name": "tag-select-ts",
+  "version": "1.0.0",
+  "description": "another tag select written with typescript",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.3.12",
+    "antd": "^3.4.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
+    "gulp": "^3.9.1",
+    "gulp-debug": "^3.2.0",
+    "gulp-typescript": "^4.0.2",
+    "jest": "^22.4.3",
+    "merge2": "^1.2.1",
+    "object-assign": "^4.1.1",
+    "react-dom": "^16.3.2",
+    "rimraf": "^2.6.2",
+    "sinon": "^4.5.0",
+    "ts-jest": "^22.4.4",
+    "typescript": "^2.8.1"
+  },
+  "scripts": {
+    "compile": "rimraf es lib && gulp compile",
+    "test": "jest"
+  },
+  "jest": {
+    "setupFiles": [
+      "./tests/setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "ts",
+      "tsx"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest",
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "author": "",
+  "license": "ISC"
+}

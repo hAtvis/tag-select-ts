@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tag-select render correct 1`] = `
+Array [
+  <div
+    class="ant-tag ant-tag-checkable"
+  >
+    John
+  </div>,
+  <div
+    class="ant-tag ant-tag-checkable"
+  >
+    Smith
+  </div>,
+]
+`;
+
+exports[`tag-select single check 1`] = `
+Array [
+  <div
+    class="ant-tag ant-tag-checkable ant-tag-checkable-checked"
+  >
+    John
+  </div>,
+  <div
+    class="ant-tag ant-tag-checkable"
+  >
+    Smith
+  </div>,
+]
+`;
